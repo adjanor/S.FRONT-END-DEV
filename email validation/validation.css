@@ -1,0 +1,23 @@
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  visibility: hidden;
+}
+
+.error-msg.visible {
+  visibility: visible;
+}
+
+.error-msg::before {
+  content: "⚠";
+  font-size: 14px;
+}
